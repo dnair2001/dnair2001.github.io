@@ -94,7 +94,7 @@ ul a:hover{
 body{
     font-family: 'Vidaloka', serif;
     color: white;
-    background-color: palevioletred;
+    background-color:#DB7093;
 }
 body:hover{
     /* background-color:blueviolet;
@@ -110,7 +110,7 @@ body:hover{
       background: pink;
     }
     25% {
-      background: lightskyblue;
+      background: #9370DB;
     }
     50% {
       background: lightseagreen;
@@ -140,7 +140,7 @@ header{
     width: 1100px;
     height: 250px;
     margin: auto;
-    background-color: lightpink;
+    background-color: #ffb3da;
     border: 3px solid white;
 }
 #banner:hover{
@@ -179,9 +179,10 @@ img:hover{
      width: 20%;
      border-style: solid;
      border-color: white;
-     background-color:black;
+     background-color: rgba(0, 0, 0, 0.445);
      margin: 0 ;
      transition: transform .2s;
+     border-radius: 10px;
      /*padding: 1em;*/
  }
 
