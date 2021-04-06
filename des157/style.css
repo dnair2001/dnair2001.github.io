@@ -248,8 +248,17 @@ footer{
     justify-content: space-evenly;
 }
 
-#validity a
+#validity1 a
 {
     color:white;
 }
 
+#validity2 a
+{
+    color:white;
+}
+
+#validity3 a
+{
+    color:white;
+}
