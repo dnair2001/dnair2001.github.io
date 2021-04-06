@@ -245,6 +245,10 @@ img:hover{
 footer{
     display:flex;
     justify-content: space-evenly;
+}
+
+#validity a
+{
     color:white;
 }
 
