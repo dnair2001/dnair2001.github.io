@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Simple Calculator App</title>
+        <script>
+            function insert(num){
+                document.form.inputtext.value = document.form.inputtext.value + num;
+            }
+            function equal(){
+                var text = document.form.inputtext.value
+                if(text){
+                    document.form.inputtext.value = eval(text)
+                }
+            }
+            function clr(){
+                 document.form.inputtext.value = "";
+            }
+        </script>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+             }
+             button {
+                width: 50;
+                height: 50;
+                font-size: 25;
+                margin: 2.5;
+                background-color: purple;
+                color: white;
+             }
+             .inputtext{
+                width: 223;
+                margin: 5;
+                font-size: 25;
+                padding: 5;
+                border: none;
+             }
+             .container{
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                /*background-color: #9966ff;*/
+                background-color: #cc00cc;
+             }
+             body {
+                background-color: pink;
+            }
+            h1{
+                margin-left: 10px;
+            }
+            p{
+                width: 25%;
+                margin-left: 10px;
+                padding-top: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="title-text" style="color:white; font-family: courier;font-weight: bold">
+            <h1> Calculator </h1>
+            <p> This is a Calculator app! It peforms any basic calculation that you want such as addition, subtraction, division, multiplication.<p>
+        </div>
+        <div class='container'>
+            <form name = "form">
+                <input class="inputtext" name="inputtext">
+            </form>
+            <table>
+                <tr><!-- td tag is for cells -->
+                    <td colspan="2"><button class="button" style="width: 105" value="C" onclick="clr()">C</button></td> 
+                    <!--<td><button class="button" value="<" onclick="insert('/')"><</button></td> -->
+                    <td><button class="button" value="/" onclick="insert('/')">/</button></td>
+                    <td><button class="button" value="x" onclick="insert('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" value="7" onclick="insert(7)">7</button></td>
+                    <td><button class="button" value="8" onclick="insert(8)">8</button></td>
+                    <td><button class="button" value="9" onclick="insert(9)">9</button></td>
+                    <td><button class="button" value="-" onclick="insert('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" value="4" onclick="insert(4)">4</button></td>
+                    <td><button class="button" value="5" onclick="insert(5)">5</button></td>
+                    <td><button class="button" value="6" onclick="insert(6)">6</button></td>
+                    <td><button class="button" value="+" onclick="insert('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" value="1" onclick="insert(1)">1</button></td>
+                    <td><button class="button" value="2" onclick="insert(2)">2</button></td>
+                    <td><button class="button" value="3" onclick="insert(3)">3</button></td>
+                    <td rowspan="2"><button class="button" style="height:105" value="=" onclick="equal()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan=2><button class="button" style="width: 105" value="0" onclick="insert(0)">0</button></td>
+                    <td><button class="button" value="." onclick="insert('.')">.</button></td></td>
+                </tr>
+            </table>
+
+    
