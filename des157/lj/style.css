@@ -11,7 +11,7 @@ h1{
     color: white;
     font-family: 'Roboto Slab', serif;
 }
-.Date{
+section{
     position: relative;
     top: -60px;
 }
@@ -30,9 +30,8 @@ h1{
     margin:0 auto;
     display:block;
 }
-.box {
+article {
     margin: 50px;
-    text-align: center;
     border: 0.2em solid darkcyan;
     background-color: white;
     border-radius: 15px 15px;
@@ -67,17 +66,17 @@ footer{
     padding-top: 30px;
 }
 
-/* #validity1 a
+#validity1 a
 {
-    color:white;
+    color:darkcyan;
 }
 
 #validity2 a
 {
-    color:white;
+    color:darkcyan;
 }
 
 #validity3 a
 {
-    color:white;
-} */
+    color:darkcyan;
+}
