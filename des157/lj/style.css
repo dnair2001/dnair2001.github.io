@@ -11,10 +11,7 @@ h1{
     color: white;
     font-family: 'Roboto Slab', serif;
 }
-time{
-    position: relative;
-    top: -60px;
-}
+
 #label{
     border: none;
     color: white;
@@ -29,6 +26,8 @@ time{
     border-radius: 5px 5px;
     margin:0 auto;
     display:block;
+    position: relative;
+    top: -60px;
 }
 article {
     margin: 50px;
