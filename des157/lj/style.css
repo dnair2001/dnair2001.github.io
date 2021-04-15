@@ -1,0 +1,83 @@
+body{
+    background-color: lightcyan;
+}
+header{
+    width: 15em;
+    height: 5em;
+    background-color: darkcyan;
+    text-align: center;
+}
+h1{
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+.Date{
+    position: relative;
+    top: -60px;
+}
+#label{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif;
+    cursor: pointer;
+    background-color: darkcyan;
+    border-radius: 5px 5px;
+    margin:0 auto;
+    display:block;
+}
+.text3 {
+    margin: 50px;
+    text-align: center;
+    border: 0.2em solid darkcyan;
+    background-color: white;
+    border-radius: 15px 15px;
+    width: 30em;
+    margin:0 auto;
+    display:block;
+    padding: 45px;
+    font-family: 'Roboto Slab', serif;
+    font-size:large;
+    line-height: 32px;
+  }
+/* #box{
+    display:flex;
+    width: 50em;
+    height: 30em;
+    margin: auto;
+    background-color: white;
+    border: 3px solid darkcyan;
+    border-radius: 10px;
+    padding-top: 50px;
+}
+p{
+    margin: 30px;
+} */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+/* #validity1 a
+{
+    color:white;
+}
+
+#validity2 a
+{
+    color:white;
+}
+
+#validity3 a
+{
+    color:white;
+} */
