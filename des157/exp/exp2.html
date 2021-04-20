@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exp2</title>
+</head>
+<body>
+    <script>
+        /*This code takes an input from the user and stores it into a variable yourName. The welcome function returns a greeting which is then used
+        by the second function and prints the greeting out. The second function also used an array containing various school supplies in which
+        I use a for loop to iterate through the entire array and display each of its contents.*/
+        var yourName = prompt("What is your name?", "");
+        function welcome(name){
+            var greeting;
+            if(name == null || name == ""){
+                reply = "Please enter a valid name";
+            }
+            else{
+                reply = `Hello ${name}, welcome to DES 157A: Interactive Media II!`;
+            }
+            return reply;
+        }
+
+        var schoolSupplies = ['visual Studio Code','laptop', 'pencil', 'paper','willingness to learn','a positive attitude'];
+
+        function listSupplies(name, supply){
+            var message = welcome(name) ;
+            console.log(message);
+            console.log(`${name}, you will need the following:`);
+            for(i=0; i<supply.length; i++){
+                console.log(`- ${supply[i]}!`);
+            }
+        }
+        listSupplies(yourName, schoolSupplies);
+        
+    </script>
+    
+</body>
+</html>
