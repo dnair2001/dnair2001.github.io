@@ -7,10 +7,12 @@
     <title>exp2</title>
 </head>
 <body>
+    <h1 id="one"></h1>
+    <h2 id="two"></h2>
     <script>
         /*This code takes an input from the user and stores it into a variable yourName. The welcome function returns a greeting which is then used
         by the second function and prints the greeting out. The second function also used an array containing various school supplies in which
-        I use a for loop to iterate through the entire array and display each of its contents.*/
+        I use a for loop to iterate through the entire array and display each of its contents on the webpage.*/
         var yourName = prompt("What is your name?", "");
         function welcome(name){
             var greeting;
@@ -23,14 +25,16 @@
             return reply;
         }
 
-        var schoolSupplies = ['visual Studio Code','laptop', 'pencil', 'paper','willingness to learn','a positive attitude'];
+        var schoolSupplies = ['Visual Studio Code','Laptop', 'Pencil', 'Paper','Willingness to learn','A positive attitude'];
 
         function listSupplies(name, supply){
             var message = welcome(name) ;
-            console.log(message);
-            console.log(`${name}, you will need the following:`);
+            //document.write(message);
+            document.getElementById("one").innerHTML = message;
+            //console.log(`${name}, you will need the following:`);
+            document.getElementById("two").innerHTML = `${name}, you will need the following:`;
             for(i=0; i<supply.length; i++){
-                console.log(`- ${supply[i]}!`);
+                document.write(`- ${supply[i]}! <br>`);
             }
         }
         listSupplies(yourName, schoolSupplies);
