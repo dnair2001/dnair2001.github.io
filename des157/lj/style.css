@@ -11,7 +11,7 @@ h1{
     color: white;
     font-family: 'Roboto Slab', serif;
 }
-#styleSpace{
+time{
     position: relative;
     top: -60px;
 }
@@ -42,6 +42,7 @@ article {
     font-family: 'Roboto Slab', serif;
     font-size:large;
     line-height: 32px;
+    margin-bottom: 7rem;
   }
 /* #box{
     display:flex;
@@ -63,7 +64,6 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding-top: 30px;
 }
 
 #validity1 a
