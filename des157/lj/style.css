@@ -11,7 +11,7 @@ h1{
     color: white;
     font-family: 'Roboto Slab', serif;
 }
-#styleSpace{
+.styleSpace{
     position: relative;
     top: -60px;
 }
