@@ -4,13 +4,17 @@ body{
 h1{
     padding-bottom: 50px;
     color:white;
+    font-family: 'Pompiere', cursive;
+    text-align: center;
+    font-size: 72px;
 }
 main{
     text-align: center;
+    margin-top: -50px;
 }
 main form {
    display: inline-block;
-   background-color: aqua;
+   background-color:lightcyan;
    width: 30em;
    height: 25em;
    padding-top: 60px;
@@ -26,25 +30,34 @@ label{
     text-align: right;
     margin-left: -20px;
     padding-right: 20px;
+   /*  font-family: 'Lobster Two', cursive; */
+   font-family: 'Merriweather', serif;
+   font-size: small;
 }
 input {
   /*display: inline-block;*/
   float: left;
 }
 
+input:focus {
+    background-color:cadetblue;
+    color:white;
+}
+
 #submitbtn{
     margin-top: 1em;
     margin-left: 45%;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: small;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
     outline: none;
     color: #fff;
-    background-color:cornflowerblue;
+    background-color:cadetblue;
     border: none;
     border-radius: 15px;
+    font-family: 'Merriweather', serif;
 }
 
 main img {
@@ -82,61 +95,81 @@ main img {
 @keyframes floating1 {
     from { transform: translate(0,  0px); }
     35%  { transform: translate(0, 35px); }
-    65%  { transform: translate(0, 75px); }
+    65%  { transform: translate(0, 90px); }
     to   { transform: translate(0, -0px); }    
 }
 
 #output {
-    width: 60em;
-    height: 5em;
-    background-color:slateblue;
+    /* width: 60em;
+    height: 5em; */
+    background-color: lightcyan;
     display:none;
-    color: white;
+    color: black;
     padding: 80px;
     margin: auto;
+    font-family: 'Pompiere', cursive;
+    font-size: 24px;
 }
 
 #img3{
     display: none;
-    width: 10em;
-    height: 10em;
+    width: 20em;
+    height: 20em;
     position: absolute;
     bottom: 0;
     left: 0;
-    animation: animation1 7s ease-in-out infinite alternate;
+    animation: animation1 7s ease-in-out infinite;
 }
 
 @keyframes animation1 {
     from { left: 0;}
-    to { left: calc(100% - 30px);}
+    to { left: calc(100% - 320px);}
+}
+
+#img4{
+    display: none;
+    width: 20em;
+    height: 10em;
+    margin-top: -110px;
+    float: right;
 }
 
 button {
     display: none;
-    padding: 15px 25px;
-    font-size: 24px;
+    padding: 10px 20px;
+    font-size: small;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
     outline: none;
     color: #fff;
-    background-color: #4CAF50;
+    background-color:cadetblue;
     border: none;
     border-radius: 15px;
+    margin: auto;
+    position: relative;
+    bottom: 60px;
+    font-family: 'Merriweather', serif;
 }
 
 #validity1 a{
     color: white;
+    font-family: 'Merriweather', serif;
+    font-size: small;
 }
 #validity2 a{
     color:white;
+    font-family: 'Merriweather', serif;
+    font-size: small;
 }
 #validity3 a{
     color:white;
+    font-family: 'Merriweather', serif;
+    font-size: small;
 }
 
 footer{
-    margin-top: 97px;
+    margin-top: 70px;
     display:flex;
     justify-content: center;
     gap: 10px;

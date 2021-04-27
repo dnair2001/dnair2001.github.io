@@ -37,11 +37,12 @@
         const name2 = document.getElementById('name2').value;
         const items = document.getElementById('items').value;
         
-        var myText = `One one cold night, you and ${name1} decide to go to the ${location}. At the grocery store, you and ${name1}
-        do your normal routine of buying groceries until you both hear "${exclamation}"! You both look behind you and see an ${adj} ${noun1}
-        eating ${name2} alive! You and ${name1} scream loudly for help but no one comes. Now the ${adj} ${noun1} charges towards you and ${name1}.
-        You ${verb} to the closest grocery aisle and use a gigantic ${items} to defeat the ferocious ${adj} ${noun1}!`;
-        //Need to make outputs show up while inputs not show up after clicking the submit button
+        var myText = `On one cold night, you decide to go to the ${location} with a group of friends. Once there, 
+        you and ${name1} explore the area until you both hear "${exclamation}"! You both look behind you and see a ${adj} ${noun1}
+        eating your friend ${name2} alive! You and ${name1} scream loudly for help but no one comes. Once the ${adj} ${noun1} hears 
+        you both scream, it charges towards you and ${name1}! You ${verb} for safety and use a gigantic ${items} to defeat the ferocious 
+        ${adj} ${noun1}!`;
+
         document.getElementById("myform").style.display = "none";
         document.getElementById("img1").style.display = "none";
         document.getElementById("img2").style.display = "none";
@@ -51,6 +52,7 @@
         document.getElementById("validity2").style.display = "none";
         document.getElementById("validity3").style.display = "none";
         document.getElementById("img3").style.display = "block";
+        document.getElementById("img4").style.display = "inline";
         out.innerHTML = myText;
     });
 })();
