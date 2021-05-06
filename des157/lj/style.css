@@ -57,6 +57,30 @@ article {
 p{
     margin: 30px;
 } */
+figure {
+    margin:0;
+}
+.imgText {
+    margin: 0;
+    
+}
+#divyaImage {
+    width: 13em;
+    height: 10em;
+    float: left;
+    padding-right: 20px;
+}
+
+#alexImage {
+    width: 13em;
+    height: 13em;
+    float: left;
+    padding-right: 20px;
+}
+
+figcaption {
+    font-size: small;
+}
 
 footer{
     display: flex;
