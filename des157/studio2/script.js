@@ -9,7 +9,7 @@
             event.preventDefault();
             const thisBtn = event.target.id;
             //alert(thisBtn);
-            document.getElementById(`ol-${thisBtn}`).className = 'overlay showing';
+            document.getElementById(`ol-${thisBtn}`).className = 'overlay showing'; // overlay shows up once image is clicked
             
         });
     }
@@ -18,7 +18,7 @@
             event.preventDefault();
             const thisBtn = event.target.id;
             //alert(thisBtn);
-            document.querySelector('.showing').className = 'overlay hidden';
+            document.querySelector('.showing').className = 'overlay hidden'; //overlay hides once close button is clicked
         });
     }
     document.addEventListener("keydown", function(event){
@@ -26,6 +26,7 @@
             document.querySelector('.showing').className = 'overlay hidden';
         }
     });
+    //Store the slideshow images inside an array
       const myImages = [
         'benji16.jpg',
         'benji17.jpg',   
@@ -35,8 +36,6 @@
 
         const slide = document.getElementById('benjifound');
 
-        // document.getElementById('next').addEventListener('click', nextPhoto);
-
         function nextPhoto(){
             currentImage++; //increment the counter
             //set the source for the slide to the next image
@@ -44,7 +43,7 @@
                 //If the user is at the end of the array...
                 currentImage = 0;
             }
-            slide.src =`images/${myImages[currentImage]}`;
+            slide.src =`images/${myImages[currentImage]}`; //changes the slideshow photo
         }
 
         // document.getElementById('previous').addEventListener('click', previousPhoto);
@@ -55,14 +54,9 @@
         // var out = document.querySelector('#output');
         btn.addEventListener('click', function(event){
             event.preventDefault();
-            // your code here
             
-            // var myText = `On one cold night, you decide to go to the ${location} with a group of friends. Once there, 
-            // you and ${name1} explore the area until you both hear "${exclamation}"! You both look behind you and see a ${adj} ${noun1}
-            // eating your friend ${name2} alive! You and ${name1} scream loudly for help but no one comes. Once the ${adj} ${noun1} hears 
-            // you both scream, it charges towards you and ${name1}! You ${verb} for safety and use a gigantic ${items} to defeat the ferocious 
-            // ${adj} ${noun1}!`;
-    
+            
+            // This is what is displayed or hidden once the finish button is clicked
             document.getElementById("finish").style.display = "none";
             document.getElementById("one").style.display = "none";
             document.getElementById("two").style.display = "none";

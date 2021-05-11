@@ -12,10 +12,14 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <main>
-        <h1>Where's Benji?</h1>
-        <p id="intro">Benji is gone! Let's retrace our footsteps to find him!</p>
-        <!-- <img class="open image" id="one" src="images/FotoJet.png"> -->
+    
+        <header>
+            <h1>Where's Benji?</h1>
+            <p id="intro">Benji is gone! Let's retrace our footsteps to find him!</p>
+        </header>
+        <main>
+        <!-- This entire section is where I put my polaroid images and have the appropriate div tags 
+        in order to show the smaller image on a hover -->
         <div class="imageBox1">
             <div class="imageInn1">
               <img src="images/FotoJet.png" class="open image" id="one" alt="Default Image">
@@ -63,10 +67,11 @@
         <!-- <img class="open image" id="five" src="images/benji5.png"> -->
     <!-- <img class="image" id="six" src="images/benji6.png"> -->
 
+
+    <!-- Next, this section is where I display my overlays when I click on an image -->
     <section id="ol-one" class="overlay hidden">
         <article>
             <h2>Location 1: Morning Walk at the Hilly Trail</h2>
-            <!-- <img src="images/IMG_3247.MOV" alt="kitten"> -->
             
             <video width="710"  controls autoplay loop muted>
                 <source  src="images/IMG_3247.MOV" type="video/mp4">
@@ -139,7 +144,9 @@
             <button class="corner close">&otimes;</button>
         </article>
     </section>
+    <!-- Finish Button -->
     <button id="finish">Finish</button>
+    <!-- Code for Second Page. This is the beginning of the slideshow. Will use JavaScript to complete the slideshow -->
     <img id="benjifound" src="images/benji15.jpg" alt="dog">
     <p id="outro">Yay! By retracing our footsteps, we found Benji at the park!</p>
     <button id="reset" onclick="document.location='index.html'">Reset</button>

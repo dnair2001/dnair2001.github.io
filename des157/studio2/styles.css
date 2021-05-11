@@ -171,43 +171,6 @@ p {
     margin: auto;
 }
 
-#heart1 {
-    position:absolute;
-    left: 42%;
-    top: 15%;
-    height: 3em;
-    width: 3em;
-    display: none;
-}
-
-#heart2 {
-    position:absolute;
-    left: 48%;
-    top: 30%;
-    height: 3em;
-    width: 3em;
-    display: none;
- 
-}
-
-#heart3 {
-    position:absolute;
-    left: 44%;
-    top: 43%;
-    height: 3em;
-    width: 3em;
-    display: none;
-}
-
-#heart4 {
-    position:absolute;
-    left: 50%;
-    top: 40%;
-    height: 4em;
-    width: 4em;
-    display: none;
-}
-
 .imageBox1 .hoverImg1 {
     position: absolute;
     left: 18%;
