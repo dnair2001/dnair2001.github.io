@@ -264,3 +264,29 @@ p {
   .imageBox5:hover .hoverImg5 {
     display: block;
   }
+
+#validity1 a{
+    color: maroon;
+    font-family: 'Merriweather', serif;
+    font-size: small;
+    display: none;
+}
+#validity2 a{
+    color:maroon;
+    font-family: 'Merriweather', serif;
+    font-size: small;
+    display: none;
+}
+#validity3 a{
+    color:maroon;
+    font-family: 'Merriweather', serif;
+    font-size: small;
+    display: none;
+}
+
+footer{
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+}

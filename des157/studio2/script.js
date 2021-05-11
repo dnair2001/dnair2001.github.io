@@ -73,6 +73,9 @@
             document.getElementById("reset").style.display = "block";
             document.getElementById("intro").style.display = "none";
             document.getElementById("outro").style.display = "block";
+            document.getElementById("v1").style.display = "block";
+            document.getElementById("v2").style.display = "block";
+            document.getElementById("v3").style.display = "block";
             // out.innerHTML = myText;
 
         });
