@@ -70,6 +70,11 @@
             document.getElementById("v1").style.display = "block";
             document.getElementById("v2").style.display = "block";
             document.getElementById("v3").style.display = "block";
+            document.getElementById("paw1").style.display = "none";
+            document.getElementById("paw2").style.display = "none";
+            document.getElementById("paw3").style.display = "none";
+            document.getElementById("paw4").style.display = "none";
+            document.getElementById("paw5").style.display = "none";
             // out.innerHTML = myText;
 
         });

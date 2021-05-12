@@ -131,7 +131,7 @@ p {
     bottom: 5%;
     right: 3%; 
     padding: 10px 20px;
-    font-size:large;
+    font-size:medium;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -227,6 +227,48 @@ p {
   .imageBox5:hover .hoverImg5 {
     display: block;
   }
+
+#paw1 {
+    position: absolute;
+    width: 7em;
+    height: 6em;
+    left: 12%;
+    bottom: 28%;
+}
+
+#paw2 {
+    position: absolute;
+    width: 8em;
+    height: 7em;
+    left: 18%;
+    bottom: 4%;
+    z-index: 1;
+}
+
+#paw3 {
+    position: absolute;
+    width: 8em;
+    height: 8em;
+    left: 45%;
+    bottom: 25%;
+}
+
+#paw4 {
+    position: absolute;
+    width: 8.5em;
+    height: 7em;
+    z-index: 1;
+    bottom: 5%;
+    right: 20%;
+}
+
+#paw5 {
+    position: absolute;
+    width: 8em;
+    height: 7.5em;
+    bottom: 27%;
+    right:13%;
+}
 
 #validity1 a{
     color: maroon;
