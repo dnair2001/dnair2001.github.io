@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of PIG</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Train+One&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <section id="rules">
+            <h1>Game of PIG</h1>
+            <ol>
+                <li>There are two players. The player whose turn it is rolls the dice.</li>
+                <li>The total of the roll is added to the current player's score, unless either dice comes up as "one"</li>
+                <li>If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins. </li>
+                <li>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</li>
+            </ol>
+        </section>
+
+        <div id="gamecontrol">
+            <h2 id="padding-start"> Start a Game</h2>
+            <h3 class="piggy1-title">Hamlet</h3>
+            <h1 id="lets-play"> Let's play!</h1>
+            <h3 id="piggy2-title1">Piglet</h3>
+            <img class ="img1" src="images/pig.PNG">
+            <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+            <img class="img2" src="images/pig.PNG">
+        </div>
+
+        <div id="game"></div>
+        <div id="actions"></div>
+        <div id="score"></div>
+
+    </main>
+    <footer>
+        <div id="validity1">
+            <a id="v1" href="mailto:&#100;&#105;&#118;&#110;&#097;&#105;&#114;&#064;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#046;&#099;&#111;&#109;" style="text-decoration: none">Email </a>
+        </div>      
+        <div id="validity2"> 
+            <a id="v2" href="https://validator.w3.org/check?uri=https://dnair2001.github.io/des157/studio2/" style="text-decoration: none">Valid HTML 5 </a>   
+        </div>           
+        <div id="validity3">
+            <a id="v3" href="https://jigsaw.w3.org/css-validator/validator?uri=https://dnair2001.github.io/des157/studio2/" style="text-decoration: none">Valid CSS </a>
+        </div>
+    </footer>
+    
+</body>
+</html>

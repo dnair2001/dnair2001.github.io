@@ -1,0 +1,235 @@
+body {
+    font-family: Arial;
+    color: #333;
+    padding: 10px;
+    line-height: 1.5em;
+}
+
+#padding-start {
+    padding-bottom: 2%;
+}
+
+.piggy1-title {
+    margin-left: 6%;
+    font-family: 'Train One', cursive;
+}
+
+#piggy2-title1 {
+    position: absolute;
+    right:8%; 
+    bottom: 46.5%;
+    font-family: 'Train One', cursive;
+}
+
+.piggy2-title2 {
+    position: absolute;
+    right:8%; 
+    bottom: 46%;
+    font-family: 'Train One', cursive;
+}
+
+#lets-play {
+    position: absolute; 
+    left: 42%;
+}
+
+h1,h2 {
+    font-family: 'Train One', cursive;
+}
+
+button { 
+    padding: 5px;
+}
+
+div {
+    padding: 20px;
+}
+
+#gamecontrol {
+    background-color: lavender;
+}
+
+#score {
+    background-color: lavender;
+}
+
+#game {
+    background-color: lavender;
+}
+#actions {
+    background-color: lavender;
+}
+
+#rules {
+    background-color: plum;
+    padding: 15px;
+    border-style: solid;
+    border-color: black;
+}
+
+#startgame {
+    background-color: plum;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 18%;
+}
+
+.img1 {
+    width: 15vw;
+}
+
+.img2 {
+    float: right;
+    width: 15vw;
+}
+
+.img1:hover{
+    transform: rotate(2475deg);
+    transition: all 3s ease-out;
+}
+
+.img2:hover{
+    transform: rotate(2475deg);
+    transition: all 3s ease-out;
+}
+
+#roll {
+    background-color: plum;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 45%;
+}
+
+#roll-again {
+    background-color: plum;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+    margin-left: 40.5%;
+    
+}
+
+#pass {
+    background-color: plum;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 2%;
+}
+
+#quit {
+    background-color: plum;
+    border-radius: 5px;
+    color: white;
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+
+.roll-dice {
+    margin-left: 45%;
+}
+
+.center {
+    text-align: center;
+    font-family: 'Train One', cursive;
+}
+
+.center1 {
+    position: absolute;
+    left: 42%;
+}
+
+.center2 {
+    position: absolute;
+    right: 42%;
+}
+
+.score-show1 {
+   float:left;
+}
+
+.score-show2 {
+    float: right;
+}
+
+#block1 {
+    background-color: white;
+    width: 4vw;
+    display: inline;
+    position: absolute;
+    left: 6%;
+    bottom: 16%;
+    border-radius: 10%;
+    border-color: black;
+}
+
+#block2 {
+    background-color: white;
+    width: 4vw;
+    position: absolute;
+    right: 6%;
+    bottom: 16%;
+    border-radius: 10%;
+    border-color: black;
+}
+
+#score-show1 {
+    position:absolute;
+    bottom:15%;
+    left:6.5%;
+    font-family: 'Train One', cursive;
+}
+
+#score-show2 {
+    position:absolute;
+    bottom:15%;
+    right:6.7%;
+    font-family: 'Train One', cursive;
+}
+
+#validity1 a{
+    color: black;
+    font-family: 'Train One', cursive;
+    font-size: small;
+}
+#validity2 a{
+    color: black;
+    font-family: 'Train One', cursive;
+    font-size: small;
+}
+#validity3 a{
+    color:black;
+    font-family: 'Train One', cursive;
+    font-size: small;
+}
+
+footer{
+    display:flex;
+    justify-content: center;
+    position: absolute;
+    left: 38%;
+    bottom: 6%;
+}
