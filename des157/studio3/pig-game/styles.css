@@ -77,6 +77,7 @@ div {
     display: inline-block;
     font-size: 16px;
     margin-left: 18%;
+    cursor: pointer;
 }
 
 .img1 {
@@ -107,7 +108,8 @@ div {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-left: 45%;
+    margin-left: 44.5%;
+    cursor: pointer;
 }
 
 #roll-again {
@@ -120,7 +122,7 @@ div {
     /* display: inline-block; */
     font-size: 16px;
     margin-left: 40.5%;
-    
+    cursor: pointer;
 }
 
 #pass {
@@ -132,6 +134,7 @@ div {
     text-decoration: none;
     font-size: 16px;
     margin-left: 2%;
+    cursor: pointer;
 }
 
 #quit {
@@ -146,6 +149,7 @@ div {
     position: absolute;
     right: 5%;
     bottom: 8%;
+    cursor: pointer;
 }
 
 .roll-dice {
@@ -226,10 +230,16 @@ div {
     font-size: small;
 }
 
+#sources a{
+    color:black;
+    font-family: 'Train One', cursive;
+    font-size: small;
+}
+
 footer{
     display:flex;
     justify-content: center;
     position: absolute;
-    left: 38%;
+    left: 35.5%;
     bottom: 6%;
 }
