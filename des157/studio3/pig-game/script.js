@@ -1,16 +1,16 @@
 (function () {
 
     'use strict';
-        var startGame = document.getElementById('startgame');
-        var gameControl = document.getElementById('gamecontrol');
-        var game = document.getElementById('game');
-        var score = document.getElementById('score');
-        var actionArea = document.getElementById('actions');
+        const startGame = document.getElementById('startgame');
+        let gameControl = document.getElementById('gamecontrol');
+        let game = document.getElementById('game');
+        let score = document.getElementById('score');
+        let actionArea = document.getElementById('actions');
         const rollsound = new Audio('media/rolling-dice.mp3');
         const winsound = new Audio('media/win-sound.mp3');
         const awsound = new Audio('media/aw-sound.mp3');
         
-        var gameData = {
+        let gameData = {
             dice: ['images/1die.png', 'images/2die.png', 'images/3die.png', 
                 'images/4die.png', 'images/5die.png', 'images/6die.png'],
             players: ['Hamlet', 'Piglet'],
