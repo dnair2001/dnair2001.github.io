@@ -34,6 +34,7 @@
            document.getElementById("validity1").style.display = "none";
            document.getElementById("validity2").style.display = "none";
            document.getElementById("validity3").style.display = "none";
+           document.getElementById("sources").style.display = "none";
            console.log(gameData.index);
            setUpTurn();
         });
