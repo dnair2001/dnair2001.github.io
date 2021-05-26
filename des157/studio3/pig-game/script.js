@@ -44,8 +44,8 @@
                actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
                game.innerHTML += '<h3 class="piggy1-title">Hamlet</h3>';
                game.innerHTML += '<h3 class="piggy2-title2">Piglet</h3>';
-               game.innerHTML += '<img class ="img1" src="images/pig.png" alt="pig1">'; 
-               game.innerHTML += '<img class ="img2" src="images/pig.png" alt="pig2">'; 
+               game.innerHTML += '<img class ="img1" src="images/pig.PNG" alt="pig1">'; 
+               game.innerHTML += '<img class ="img2" src="images/pig.PNG" alt="pig2">'; 
                game.innerHTML += '<img class="center1" src="images/1die.png" alt="dice1">'; 
                game.innerHTML += '<img class="center2" src="images/2die.png" alt="dice2">';
                showCurrentScore(); 
