@@ -1,15 +1,19 @@
 (function () {
 
     'use strict';
+        // Select the elements startGame, gamecontrol, game, score, actions
         const startGame = document.getElementById('startgame');
         let gameControl = document.getElementById('gamecontrol');
         let game = document.getElementById('game');
         let score = document.getElementById('score');
         let actionArea = document.getElementById('actions');
+
+        // Create new audio objects
         const rollsound = new Audio('media/rolling-dice.mp3');
         const winsound = new Audio('media/win-sound.mp3');
         const awsound = new Audio('media/aw-sound.mp3');
         
+        //gameData Object with properties
         let gameData = {
             dice: ['images/1die.png', 'images/2die.png', 'images/3die.png', 
                 'images/4die.png', 'images/5die.png', 'images/6die.png'],
@@ -22,6 +26,7 @@
             gameEnd: 29
         };
 
+        //When user clicks the start game button, the footer disappears and the quit button is displayed
         startGame.addEventListener("click", function(){
            gameData.index = Math.round(Math.random());
         //    gameControl.innerHTML = '<h2 class="center">The Game has started</h2>';
@@ -36,9 +41,10 @@
            document.getElementById("validity3").style.display = "none";
            document.getElementById("sources").style.display = "none";
            console.log(gameData.index);
-           setUpTurn();
+           setUpTurn(); //calls th set up turn function
         });
 
+            //When called, the pig and dice images shpw up as well as the player's turn and roll dice button
             function setUpTurn() {
                game.innerHTML = `<p class="center">Roll the dice for ${gameData.players[gameData.index]}</p>`;
                actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
@@ -55,6 +61,7 @@
                });
             }
 
+            //Dice is rolled and displayed
             function throwDice(){
                 actionArea.innerHTML = '';
                 gameData.roll1 = Math.floor(Math.random() * 6) + 1;
@@ -70,32 +77,33 @@
                 gameData.rollSum = gameData.roll1 + gameData.roll2;
                 console.log(gameData);
 
+                //if the sum is equal to 2, then it is snake eyes. That player's score is now 0.
                 if(gameData.rollSum === 2) {
                     console.log("Snake Eyes!");
                     game.innerHTML += '<p class="center">Oh snap! Snake eyes! <p>';
                     gameData.score[gameData.index] = 0;
                     gameData.index ? (gameData.index = 0) : (gameData.index = 1);
-                    showCurrentScore();
-                    setTimeout(setUpTurn, 2000);
+                    showCurrentScore(); //score is displayed
+                    setTimeout(setUpTurn, 2000); //turn it set up for only 2000ms
                 }
-                else if (gameData.roll1 === 1 || gameData.roll2 === 1)
+                else if (gameData.roll1 === 1 || gameData.roll2 === 1) //If you roll a one, you lose your turn
                 {
                     gameData.index ? (gameData.index = 0) : (gameData.index = 1);
                     game.innerHTML += `<p class="center">Sorry, one of your rolls was a one, switching to ${gameData.players[gameData.index]}</p>`;
-                    setTimeout(setUpTurn, 2000);
-                    showCurrentScore();
+                    setTimeout(setUpTurn, 2000); //turn it set up for only 2000ms
+                    showCurrentScore(); //score is displayed
                 }
                 else {
-                    gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
+                    gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum; //else, roll again until your turn is lost or you pass
                     actionArea.innerHTML = '<button id="roll-again">Roll Again</button><button id="pass">Pass</button>';
                     document.getElementById('roll-again').addEventListener('click', function(){
-                        throwDice();
-                        rollsound.play(); 
+                        throwDice(); //dice is rolled
+                        rollsound.play(); //dice sound plays when we roll dice
                     });
                     document.getElementById('pass').addEventListener('click', function(){
                         gameData.index ? (gameData.index = 0) : (gameData.index = 1);
-                        setUpTurn();
-                        awsound.play(); 
+                        setUpTurn(); //sets up turn for next player once we pass
+                        awsound.play(); //aw sound plays if we pass
                     });
 
                     //check to see if the player won
@@ -103,9 +111,10 @@
                 }
             }
 
+            //Displays winner and the points they have earned once a player hits 30 or above. All body colors switch to Cyan & Turquoise
             function checkWinningCondition(){
               if (gameData.score[gameData.index] > gameData.gameEnd) {
-                  winsound.play();
+                  winsound.play(); //winner sound plays once someone wins
                   score.innerHTML = `<h2 style="text-align:center;">${gameData.players[gameData.index]}
                   wins with ${gameData.score[gameData.index]} points!</h2>`;
                   
@@ -125,6 +134,7 @@
                 }
             }
 
+            //displays current score under the pigs
             function showCurrentScore(){
                 game.innerHTML += '<div id="block1"></div>'
                 game.innerHTML += '<div id="block2"></div>'
