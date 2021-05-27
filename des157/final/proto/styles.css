@@ -1,0 +1,307 @@
+/* Background Color */
+body {
+    background-color: antiquewhite;
+}
+
+/* Heading Color */
+h1 {
+    margin-bottom: 0;
+    margin-top: 10px;
+    color: maroon;
+    font-family: 'Sacramento', cursive;
+    font-size: 5em;
+}
+
+/* Subtitle/Caption Text */
+p {
+    margin-top: 0;
+    margin-left: 5px;
+}
+
+#intro {
+    color: maroon;
+}
+
+.image {
+    width: 18em;
+    height: 23em;
+    cursor: pointer;
+}
+
+
+/* Styling for each of the 5 polaroids */
+#one {
+    /* left: 15%; */
+    transform: rotate(-5deg);
+    padding-left: 5%;
+}
+
+#two {
+    /* bottom:5%;
+    right: 15%; */
+    margin-left: 70%;
+    transform: rotate(5deg);
+}
+
+#three {
+    /* left: 20%; */
+    transform: rotate(5deg);
+    padding-left: 5%;
+}
+
+#four {
+    /* width: 25em;
+    height: 23em; */
+    margin-left: 70%;
+    transform: rotate(-5deg);
+}
+
+#five {
+    right: 15%;
+    transform: rotate(5deg);
+    padding-left: 5%;
+}
+
+/* Styling for the Pawprints */
+#paw1 {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    transform: rotate(150deg);
+    height: 10%;
+    width: 6%;
+}
+
+#paw2 {
+    position: absolute;
+    top: 85%;
+    left: 17%;
+    transform: rotate(130deg);
+    height: 10%;
+    width: 6%;
+}
+
+#paw3 {
+    position: absolute;
+    top: 85%;
+    left: 30%;
+    transform: rotate(110deg);
+    height: 10%;
+    width: 6%;
+}
+
+#paw4 {
+    position: absolute;
+    top: 80%;
+    left: 42%;
+    transform: rotate(60deg);
+    height: 10%;
+    width: 6%;
+}
+
+#paw5 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: rotate(60deg);
+    height: 10%;
+    width: 6%;
+}
+
+#paw6 {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: rotate(70deg);
+    height: 10%;
+    width: 6%;
+}
+
+#paw7 {
+    position: absolute;
+    top: 40%;
+    left: 72%;
+    transform: rotate(100deg);
+    height: 10%;
+    width: 6%;
+}
+
+#paw8 {
+    position: absolute;
+    top: 55%;
+    left: 80%;
+    transform: rotate(180deg);
+    height: 10%;
+    width: 6%;
+}
+
+#paw9 {
+    position: absolute;
+    bottom: -25%;
+    left: 80%;
+    transform: rotate(180deg);
+    height: 10%;
+    width: 6%;
+}
+
+#paw10 {
+    position: absolute;
+    bottom: -40%;
+    left: 70%;
+    transform: rotate(230deg);
+    height: 10%;
+    width: 6%;
+}
+
+#paw11 {
+    position: absolute;
+    bottom: -40%;
+    left: 55%;
+    transform: rotate(250deg);
+    height: 10%;
+    width: 6%;
+}
+
+#paw12 {
+    position: absolute;
+    bottom: -50%;
+    left: 40%;
+    transform: rotate(270deg);
+    height: 10%;
+    width: 6%;
+}
+
+#paw13 {
+    position: absolute;
+    bottom: -40%;
+    left: 30%;
+    transform: rotate(270deg);
+    height: 10%;
+    width: 6%;
+}
+
+#paw14 {
+    position: absolute;
+    bottom: -75%;
+    left: 10%;
+    transform: rotate(180deg);
+    height: 10%;
+    width: 6%;
+}
+
+#paw15 {
+    position: absolute;
+    bottom: -95%;
+    left: 15%;
+    transform: rotate(140deg);
+    height: 10%;
+    width: 6%;
+}
+
+#paw16 {
+    position: absolute;
+    bottom: -105%;
+    left: 25%;
+    transform: rotate(90deg);
+    height: 10%;
+    width: 6%;
+}
+
+#paw17 {
+    position: absolute;
+    bottom: -95%;
+    left: 35%;
+    transform: rotate(50deg);
+    height: 10%;
+    width: 6%;
+}
+
+#paw18 {
+    position: absolute;
+    bottom: -85%;
+    left: 45%;
+    transform: rotate(50deg);
+    height: 10%;
+    width: 6%;
+}
+
+#paw19 {
+    position: absolute;
+    bottom: -80%;
+    left: 55%;
+    transform: rotate(80deg);
+    height: 10%;
+    width: 6%;
+}
+
+#paw20 {
+    position: absolute;
+    bottom: -130%;
+    left: 75%;
+    transform: rotate(180deg);
+    height: 10%;
+    width: 6%;
+}
+
+#paw21 {
+    position: absolute;
+    bottom: -150%;
+    left: 70%;
+    transform: rotate(200deg);
+    height: 10%;
+    width: 6%;
+}
+
+#paw22 {
+    position: absolute;
+    bottom: -160%;
+    left: 60%;
+    transform: rotate(240deg);
+    height: 10%;
+    width: 6%;
+}
+
+/* Hotpost Styling */
+#hotspot1 {
+    height: 50px;
+    width: 50px;
+    background-color:darkred;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 35%;
+    left: 22%;
+}
+
+#hotspot2 {
+    height: 50px;
+    width: 50px;
+    background-color:darkred;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -19%;
+    right: 11%;
+}
+
+/* Footer Styling */
+#validity1 a{
+    color: maroon;
+    font-family: 'Merriweather', serif;
+    font-size: small;
+}
+#validity2 a{
+    color:maroon;
+    font-family: 'Merriweather', serif;
+    font-size: small;
+}
+#validity3 a{
+    color:maroon;
+    font-family: 'Merriweather', serif;
+    font-size: small;
+}
+
+footer{
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+}
