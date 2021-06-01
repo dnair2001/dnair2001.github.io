@@ -1,81 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DES 157A - Studio 2: Every Picture</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="styles.css" rel="stylesheet">   
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <title>Catch-A-Pig!</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-        <header>
-            <h1>Where's Benji?</h1>
-            <p id="intro">Benji's fun and exciting adventure today!</p>
-        </header>
-        <main>
-        <!-- This entire section is where I put my polaroid images -->
-            <div class="imageInn1">
-              <img src="images/FotoJet.png" class="open image" id="one" alt="Default Image">
-            </div>
-            <div class="imageInn2">
-              <img src="images/benji2.png" class="open image" id="two" alt="Default Image">
-            </div>
-            <div class="imageInn3">
-              <img src="images/benji3.png" class="open image" id="three" alt="Default Image">
-            </div>
-            <div class="imageInn4">
-              <img src="images/benji6.png" class="open image" id="four" alt="Default Image">
-            </div>
-            <div class="imageInn5">
-              <img src="images/benji5.png" class="open image" id="five" alt="Default Image">
-            </div>
 
-    <!-- The pawprint trail img tags -->
-    <img id="paw1" src="images/pawprint.PNG" alt="p1">
-    <img id="paw2" src="images/pawprint.PNG" alt="p2">
-    <img id="paw3" src="images/pawprint.PNG" alt="p3">
-    <img id="paw4" src="images/pawprint.PNG" alt="p4">
-    <img id="paw5" src="images/pawprint.PNG" alt="p5">
-    <img id="paw6" src="images/pawprint.PNG" alt="p6">
-    <img id="paw7" src="images/pawprint.PNG" alt="p7">
-    <img id="paw8" src="images/pawprint.PNG" alt="p8">
-    <img id="paw9" src="images/pawprint.PNG" alt="p9">
-    <img id="paw10" src="images/pawprint.PNG" alt="p10">
-    <img id="paw11" src="images/pawprint.PNG" alt="p11">
-    <img id="paw12" src="images/pawprint.PNG" alt="p12">
-    <img id="paw13" src="images/pawprint.PNG" alt="p13">
-    <img id="paw14" src="images/pawprint.PNG" alt="p14">
-    <img id="paw15" src="images/pawprint.PNG" alt="p15">
-    <img id="paw16" src="images/pawprint.PNG" alt="p16">
-    <img id="paw17" src="images/pawprint.PNG" alt="p17">
-    <img id="paw18" src="images/pawprint.PNG" alt="p18">
-    <img id="paw19" src="images/pawprint.PNG" alt="p19">
-    <img id="paw20" src="images/pawprint.PNG" alt="p20">
-    <img id="paw21" src="images/pawprint.PNG" alt="p21">
-    <img id="paw22" src="images/pawprint.PNG" alt="p22">
+  <h1>Catch-A-Pig! <span class="score">0</span></h1>
+
+  <div class="game">
+    <div class="hole hole1">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole2">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole3">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole4">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole5">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole6">
+      <div class="mole"></div>
+    </div>
+  </div>
+  <button class="btn" onClick="startGame()">Start!</button>
+
+<script>
+  const holes = document.querySelectorAll('.hole');
+  const scoreBoard = document.querySelector('.score');
+  const moles = document.querySelectorAll('.mole');
+  let lastHole;
+  let timeUp = false;
+  let score = 0;
+  // Create new audio objects
+  const rollsound = new Audio('media/rolling-dice.mp3');
+  const winsound = new Audio('media/win-sound.mp3');
+  const awsound = new Audio('media/aw-sound.mp3');
+  const clicksound = new Audio('media/click-sound.mp3');
+
+  function randomTime(min, max) {
+    return Math.round(Math.random() * (max-min) + min);
+  }
+
+  function randomHole(holes){
+    const idx = Math.floor(Math.random() * holes.length);
+    const hole = holes[idx];
+    if(hole === lastHole) {
+      console.log("Ah nah that's the same one bud");
+      return randomHole(holes);
+    }
+    lastHole = hole;
+    return hole;
+  }
+
+  function peep(){
+    const time = randomTime(500, 1500);
+    const hole = randomHole(holes);
+    hole.classList.add("up");
+
+    setTimeout(() => {
+      hole.classList.remove('up');
+      if(!timeUp) peep();
+    }, time)
+}
+
+function startGame() {
+  scoreBoard.textContent = 0;
+  timeUp = false;
+  score = 0;
+  peep();
+  setTimeout(() => timeUp = true, 20000);
+}
+
+function bonk(e) {
+  if(!e.isTrusted) return; //cheaters
+  score++;
+  this.classList.remove('up');
+  scoreBoard.textContent = score;
+  clicksound.play();
+}
+
+moles.forEach(mole => mole.addEventListener("click", bonk));
 
 
-    <!-- Hotspot Divs Section -->
-    <div id="hotspot1"></div>
-    <div id="hotspot2"></div>
-
-    </main>
-    
-    <footer>
-        <div id="validity1">
-            <a id="v1" href="mailto:&#100;&#105;&#118;&#110;&#097;&#105;&#114;&#064;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#046;&#099;&#111;&#109;" style="text-decoration: none">Email |</a>
-        </div>      
-        <div id="validity2"> 
-            <a id="v2" href="https://validator.w3.org/check?uri=https://dnair2001.github.io/des157/studio2/" style="text-decoration: none">Valid HTML 5 |</a>   
-        </div>           
-        <div id="validity3">
-            <a id="v3" href="https://jigsaw.w3.org/css-validator/validator?uri=https://dnair2001.github.io/des157/studio2/" style="text-decoration: none">Valid CSS </a>
-        </div>
-    </footer>
+</script>
 </body>
 </html>
