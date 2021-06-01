@@ -9,43 +9,55 @@
   <script src="script.js" defer></script>
 </head>
 <body>
+  <main>
+    <h1>Catch A Pig! <span class="score" style="visibility: hidden;">0</span><span id="timer" style="visibility: hidden;"></span></h1>
+    <div class="menu">
+      <table style="width: 100%;">
+      <tbody>
+      <tr>
+        <td style="width: 60%;">
+          <h2 class="rules">Rules: The mischevious pigs have gotten loose in the farm. Hurry and catch as much as you can within 30 seconds so they can be returned safely to their pen. When you see a pig pop out, click on it to return it safely back to its pen. </h2>
+        </td>
+        <td style="width: 40%;"> <img class="pig" src="images/pig.PNG" alt="pig" /></td>
+      </tr>
+      </tbody>
+      </table>
+      </div>
 
-  <h1>Catch A Pig! <span class="score" style="visibility: hidden;">0</span><span id="timer" style="visibility: hidden;"></span></h1>
-  <div class="menu">
-    <table style="width: 100%;">
-    <tbody>
-    <tr>
-      <td style="width: 60%;">
-        <h2 class="rules">Rules: The mischevious pigs have gotten loose in the farm. Hurry and catch as much as you can within 30 seconds so they can be returned safely to their pen. When you see a pig pop out, click on it to return it safely back to its pen. </h2>
-      </td>
-      <td style="width: 40%;"> <img class="pig" src="images/pig.PNG" alt="pig" /></td>
-    </tr>
-    </tbody>
-    </table>
-    </div>
+    <button id="lets-play" >Let's Play</button>
 
-  <button id="lets-play" >Let's Play</button>
-
-  <div class="game" style="visibility:hidden;">
-    <div class="hole hole1">
-      <div class="mole"></div>
+    <div class="game" style="visibility:hidden;">
+      <div class="hole hole1">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole2">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole3">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole4">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole5">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole6">
+        <div class="mole"></div>
+      </div>
     </div>
-    <div class="hole hole2">
-      <div class="mole"></div>
-    </div>
-    <div class="hole hole3">
-      <div class="mole"></div>
-    </div>
-    <div class="hole hole4">
-      <div class="mole"></div>
-    </div>
-    <div class="hole hole5">
-      <div class="mole"></div>
-    </div>
-    <div class="hole hole6">
-      <div class="mole"></div>
-    </div>
-  </div>
-  <button class="btn" style="display:none">Start!</button>
+    <button class="btn" style="display:none">Start!</button>
+    </main>
+    <footer>
+      <div id="validity1">
+        <a id="v1" href="mailto:&#100;&#105;&#118;&#110;&#097;&#105;&#114;&#064;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#046;&#099;&#111;&#109;" style="text-decoration: none">Email |</a>
+      </div>      
+      <div id="validity2"> 
+        <a id="v2" href="https://validator.w3.org/check?uri=https://dnair2001.github.io/des157/final/usertest/" style="text-decoration: none">Valid HTML 5 |</a>   
+      </div>           
+      <div id="validity3">
+        <a id="v3" href="https://jigsaw.w3.org/css-validator/validator?uri=https://dnair2001.github.io/des157/final/usertest/" style="text-decoration: none">Valid CSS </a>
+      </div>
+  </footer>
 </body>
 </html>

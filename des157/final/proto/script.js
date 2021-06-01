@@ -1,8 +1,7 @@
 (function () {
 
     'use strict';
-    alert("hello");
-    const holes = document.querySelectorAll('.hole');
+  const holes = document.querySelectorAll('.hole');
   const scoreBoard = document.querySelector('.score');
   const moles = document.querySelectorAll('.mole');
   let lastHole;
@@ -10,6 +9,10 @@
   let score = 0;
   // Create new audio objects
   const clicksound = new Audio('media/click-sound.mp3');
+
+  document.getElementById("v1").style.display = "block";
+      document.getElementById("v2").style.display = "block";
+      document.getElementById("v3").style.display = "block";
 
   function randomTime(min, max) {
     return Math.round(Math.random() * (max-min) + min);

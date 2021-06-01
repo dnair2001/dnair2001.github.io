@@ -21,6 +21,9 @@
       document.querySelector(".menu").style.display = "none";
       document.getElementById("timer").style.visibility = "";
       document.getElementById("lets-play").style.display = "none";
+      document.getElementById("v1").style.display = "block";
+      document.getElementById("v2").style.display = "block";
+      document.getElementById("v3").style.display = "block";
     })
   
     function randomTime(min, max) {

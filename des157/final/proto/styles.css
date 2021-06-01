@@ -101,3 +101,29 @@ html {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+#validity1 a{
+  color: white;
+  font-family: 'Merriweather', serif;
+  font-size: small;
+  display: none;
+}
+#validity2 a{
+  color:white;
+  font-family: 'Merriweather', serif;
+  font-size: small;
+  display: none;
+}
+#validity3 a{
+  color:white;
+  font-family: 'Merriweather', serif;
+  font-size: small;
+  display: none;
+}
+
+footer{
+  margin-top: 110px;
+  display:flex;
+  justify-content: center;
+  gap: 10px;
+}
