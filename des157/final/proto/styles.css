@@ -63,7 +63,7 @@ html {
     bottom: -30px;
   }
   
-  .mole {
+  .pig {
     background: url('images/pig.PNG') bottom center no-repeat;
     background-size: 60%;
     position: absolute;
@@ -74,7 +74,7 @@ html {
     cursor: pointer;
   }
   
-  .hole.up .mole {
+  .hole.up .pig {
     top: 0;
   }
 

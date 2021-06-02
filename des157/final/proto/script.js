@@ -3,7 +3,7 @@
     'use strict';
   const holes = document.querySelectorAll('.hole');
   const scoreBoard = document.querySelector('.score');
-  const moles = document.querySelectorAll('.mole');
+  const pigs = document.querySelectorAll('.pig');
   let lastHole;
   let timeUp = false;
   let score = 0;
@@ -58,5 +58,5 @@ function bonk(e) {
   clicksound.play();
 }
 
-moles.forEach(mole => mole.addEventListener("click", bonk));
+pigs.forEach(pig => pig.addEventListener("click", bonk));
 })();
