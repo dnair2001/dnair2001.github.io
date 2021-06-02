@@ -1,0 +1,52 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+    background: rgb(15, 15, 94);
+    color: white;
+    font-size: 30px;
+}
+
+.ob {
+    width: 30%;
+    margin-left: 10%;
+}
+
+.shadow {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px rgb(15, 15, 94);
+    margin-bottom: 5%;
+    line-height: 1.8;
+    font-size: large;
+}
+
+.img {
+    width: 40%;
+    float: right;
+    margin-right: 10%;
+    border: 5px solid rgb(15, 15, 94);
+}
+
+#validity1 a{
+    color: white;
+    font-size: medium;
+}
+#validity2 a{
+    color:white;
+    font-size: medium;
+}
+#validity3 a{
+    color:white;
+    font-size: medium;
+}
+
+footer{
+    background-color: rgb(15, 15, 94);
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+}
