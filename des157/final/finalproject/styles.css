@@ -11,31 +11,66 @@ html {
   body {
     padding: 0;
     margin: 0;
-    font-family: 'Lobster Two', cursive;
     color: rgb(177, 37, 107);
     background-color: lightpink;
   }
   
+  /* Headings */
   h1 {
     text-align: center;
     font-size: 10rem;
     line-height: 1;
     margin-bottom: 0;
+    font-family: 'Berkshire Swash', cursive;
   }
 
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0;
+    font-family: 'Berkshire Swash', cursive;
+  }
+
+  /* Rules Section */
   .rules {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 25%;
+    padding-right: 15%;
     font-size: x-large;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
   }
 
+  /* Pig Image Animation */
+  .home-pig {
+    transition: transform .2s; /* Animation */
+  }
+
+  .home-pig:hover {
+    transform: scale(1.3);
+  }
+  
+  /* Farmer Graphic */
+  #farmer {
+    position: absolute;
+    top: 21%;
+    left: 10%;
+  }
+
+  /* Score */
   .score {
     background: rgba(255,255,255,0.2);
     padding: 0 3rem;
     line-height: 1;
     border-radius: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  /* Timer */
+  #timer {
+    padding: 3%;
   }
   
+  /* Hay */
   .game {
     width: 600px;
     height: 400px;
@@ -64,6 +99,7 @@ html {
     bottom: -30px;
   }
   
+  /* Pig Coming Out Of The Hole Animation */
   .pig {
     background: url('images/pig.PNG') bottom center no-repeat;
     background-size: 60%;
@@ -79,10 +115,12 @@ html {
     top: 0;
   }
 
+  /* Button Styling */
   button {
     display: inline-block;
     padding: 15px 25px;
     font-size: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -95,35 +133,135 @@ html {
     margin-left: 46%;
   }
 
-.button:hover {background-color: #3e8e41}
+button:hover {background-color: rgb(223, 117, 170)}
 
-.button:active {
-  background-color: #3e8e41;
+button:active {
+  background-color: rgb(75, 27, 51);
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
+.quit {
+  display: inline-block;
+  padding: 0px 14px;
+  font-size: 34px;
+  font-family: 'Source Sans Pro', sans-serif;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(177, 37, 107);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  /* margin-left: 55%; */
+  position: absolute;
+  top: 8%;
+  left: 8%;
+}
+
+#go-home {
+    display: inline-block;
+    /* padding: 7px 14px; */
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(177, 37, 107);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-left: 70%;
+}
+
+/* Modal Text */
+#game-over {
+  font-family: 'Lobster Two', cursive;
+}
+
+#output {
+  font-size: x-large;
+  font-family: 'Lobster Two', cursive;
+}
+/* Modal Overlay */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 50%;
+  height: 85%;
+  z-index: 3;
+  font-size: 32px;
+  padding: 35px 0;
+  border: 3px solid green;
+  text-align: center;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Footer */
+
 #validity1 a{
-  color: white;
-  font-family: 'Merriweather', serif;
+  color: rgb(177, 37, 107);
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: small;
   display: none;
 }
 #validity2 a{
-  color:white;
-  font-family: 'Merriweather', serif;
+  color:rgb(177, 37, 107);
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: small;
   display: none;
 }
 #validity3 a{
-  color:white;
-  font-family: 'Merriweather', serif;
+  color:rgb(177, 37, 107);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: small;
+  display: none;
+}
+
+#sources a{
+  color:rgb(177, 37, 107);
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: small;
   display: none;
 }
 
 footer{
-  margin-top: 110px;
+  margin-top: 40px;
   display:flex;
   justify-content: center;
   gap: 10px;
